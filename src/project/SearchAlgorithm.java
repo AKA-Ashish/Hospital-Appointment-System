@@ -54,10 +54,10 @@ public class SearchAlgorithm {
         // Get the search text
         String searchText = txtSearch.getText().toLowerCase();
 
-        // Clear the current rows in the table
+        // Clear the current rows in the table...
         tblMdl.setRowCount(0);
 
-        // Filter and add rows based on the search text
+        // Filter and add rows based on the search text...
         for (int i = 0; i < data.length; i++) {
             boolean match = false;
             for (int j = 0; j < data[i].length; j++) {
