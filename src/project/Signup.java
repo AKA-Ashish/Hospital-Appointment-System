@@ -1,5 +1,7 @@
 package project;
 
+import com.toedter.components.JTitlePanel;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.text.BadLocationException;
@@ -19,6 +21,7 @@ public class Signup extends JFrame {
     JTextField txtUserName, txtPassword;
     JPanel emptyPanel = new JPanel();
     JLabel lblForget;
+
 
 public    Signup() throws IOException {
 
@@ -57,6 +60,9 @@ public    Signup() throws IOException {
             JPanel mainPanel = new JPanel();
             JPanel formPanel = new JPanel();
             JPanel logoPanel = new JPanel();
+
+
+
 
             lblUserName = new JLabel("Username:");
             lblUserName.setFont(new Font("",Font.BOLD,25));

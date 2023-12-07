@@ -24,7 +24,7 @@ public class DoctorPanel extends JFrame{
     JPanel pnlDashboard = new JPanel();
 
     JButton btnLogout = new JButton("Logout");
-    JLabel lblTitle = new JLabel("Hospital Management System");
+    JLabel lblTitle = new JLabel("Hospital Appointment System");
     JLabel lblBoardInfo = new JLabel("Doctor Panel");
 
     JButton btnViewAppointment = new JButton("View Appointment");

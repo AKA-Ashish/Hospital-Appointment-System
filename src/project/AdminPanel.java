@@ -19,7 +19,7 @@ public class AdminPanel extends JFrame {
     JPanel pnlMainBoard = new JPanel();
     JPanel emptyPanel = new JPanel();
     JButton btnLogout = new JButton("Logout");
-    JLabel lblTitle = new JLabel("Hospital Management System");
+    JLabel lblTitle = new JLabel("Hospital Appointment System");
     JLabel lblBoardInfo = new JLabel("Admin Panel");
     JButton btnDoctorDetails = new JButton();
     ImageIcon iconDoctorDetails = new ImageIcon(new ImageIcon("images/Doctor.png").getImage().getScaledInstance(180,180,Image.SCALE_SMOOTH));
@@ -107,6 +107,7 @@ public class AdminPanel extends JFrame {
         lblTitle.setFont(new Font("",Font.BOLD,28));
         pnlTitle.add(pnlLogout,BorderLayout.WEST);
         pnlTitle.add(lblTitle,BorderLayout.CENTER);
+        pnlTitle.setBackground(Color.lightGray);
 
         pnlLoginInfo.setLayout(new BorderLayout());
         pnlLoginInfo.setPreferredSize(new Dimension(0,50));
