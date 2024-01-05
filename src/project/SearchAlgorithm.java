@@ -14,13 +14,13 @@ public class SearchAlgorithm {
     JTable tbl;
     DefaultTableModel tblMdl;
 
-    Object[][] data;
+    Object[][] data; //Object ko 2d array instance created
 
     SearchAlgorithm(JTextField txtSearch, JTable tbl){
 
         this.txtSearch=txtSearch;
         this.tbl=tbl;
-        tblMdl=(DefaultTableModel) tbl.getModel();
+        tblMdl=(DefaultTableModel) tbl.getModel(); //typecasting
 
         data = new Object[tbl.getRowCount()][tbl.getColumnCount()];
 
