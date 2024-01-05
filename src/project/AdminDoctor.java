@@ -43,7 +43,7 @@ public class AdminDoctor<gender> extends JPanel {
     JTextField txtAddress = new JTextField();
     JLabel lblDOB = new JLabel("Date of birth");
     JLabel lblCatagorey = new JLabel("Specialization");
-    String[] Category = {"Heart","Brain","Head","Eye"};
+    String[] Category = {"Heart","Brain","Head","Eye","Nose","Throat","ENT"};
     JComboBox comboboxCategory = new JComboBox(Category);
     JLabel lblContact = new JLabel("Contact");
     JTextField txtContact = new JTextField();
@@ -526,7 +526,8 @@ public class AdminDoctor<gender> extends JPanel {
 
                         try {
 
-                            db.insertDoctor(txtName.getText(),txtAddress.getText(), Date.valueOf(chooseDate), comboboxCategory.getSelectedItem().toString(),txtTiming.getText(),txtContact.getText(), Objects.requireNonNull(comboBox.getSelectedItem()).toString(),Days,image,Integer.parseInt(Id));
+                            db.
+                                    insertDoctor(txtName.getText(),txtAddress.getText(), Date.valueOf(chooseDate), comboboxCategory.getSelectedItem().toString(),txtTiming.getText(),txtContact.getText(), Objects.requireNonNull(comboBox.getSelectedItem()).toString(),Days,image,Integer.parseInt(Id));
                         } catch (SQLException ex) {
                             ex.printStackTrace();
                         }
