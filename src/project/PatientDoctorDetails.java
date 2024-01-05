@@ -18,7 +18,7 @@ public class PatientDoctorDetails extends JPanel{
     JPanel pnlFooter = new JPanel();
     JLabel lblSearch = new JLabel("Doctor Name:");
     JTextField txtSearch = new JTextField();
-    String[] category = {"Select Category","Heart","Brain","Head","Eye"};
+    String[] category = {"Select Category","Heart","Brain","Head","Eye","Nose","Throat"};
     JComboBox comboBoxCategory = new JComboBox(category);
 
     JTable tblappointment;
